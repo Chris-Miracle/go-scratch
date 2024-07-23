@@ -5,33 +5,35 @@ import (
 )
 
 func main() {
-	// x := 0
+	age := 45
 
-	// for x < 5 {
-	// 	fmt.Println("value of x is:", x)
+	fmt.Println(age <= 50)
+	fmt.Println(age >= 50)
+	fmt.Println(age == 45)
+	fmt.Println(age != 50)
 
-	// 	x++
-	// }
-
-	// for i := 0; i < 5; i++ {
-	// 	fmt.Println("value of x is:", i)
-	// }
-
-	names := []string{"Hey", "life", "is", "simple"}
-
-	// for i := 0; i < len(names); i++ {
-	// 	fmt.Println("value of names right now is ", names[i])
-	// }
-
-	// for index, value := range names {
-	// 	fmt.Println(index, value)
-	// }
-
-	for _, value := range names {
-		fmt.Println(value)
-		value = "jake"
+	if age < 30 {
+		fmt.Println("Age is less than 30")
+	} else if age < 40 {
+		fmt.Println("Age is less than 40")
+	} else {
+		fmt.Println("Age is not less than 45")
 	}
 
-	fmt.Println(names)
+	names := []string{"jalee", "jill", "biden", "trump"}
+
+	for index, value := range names {
+		if(index == 1){
+			fmt.Println("Coontinuing at pos", index)
+			continue
+		}
+
+		if(index > 1){
+			fmt.Println("breaking at pos", index)
+			break
+		}
+
+		fmt.Printf("thee value at pos %v is %v \n", index, value)
+	}
 
 }

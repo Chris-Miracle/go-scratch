@@ -2,34 +2,36 @@ package main
 
 import (
 	"fmt"
-	"sort"
 )
 
 func main() {
-	// greeting := "Hello Charles, Hoow are you?!"
+	// x := 0
 
-	// fmt.Println(strings.Contains(greeting, "Charles"))
-	// fmt.Println(strings.ReplaceAll(greeting, "are", "is"))
-	// fmt.Println(strings.ToUpper(greeting))
-	// fmt.Println(strings.Index(greeting, "?"))
-	// fmt.Println(strings.Split(greeting, " "))
+	// for x < 5 {
+	// 	fmt.Println("value of x is:", x)
 
-	// fmt.Println("Original string =", greeting)
+	// 	x++
+	// }
 
-	ages := []int{48, 94, 96, 39, 30, 18, 33, 30}
+	// for i := 0; i < 5; i++ {
+	// 	fmt.Println("value of x is:", i)
+	// }
 
-	sort.Ints(ages)
-	fmt.Println(ages)
+	names := []string{"Hey", "life", "is", "simple"}
 
-	index := sort.SearchInts(ages, 96)
+	// for i := 0; i < len(names); i++ {
+	// 	fmt.Println("value of names right now is ", names[i])
+	// }
 
-	fmt.Println(index)
+	// for index, value := range names {
+	// 	fmt.Println(index, value)
+	// }
 
-	names := []string{"hey", "life", "isnt", "funny"}
+	for _, value := range names {
+		fmt.Println(value)
+		value = "jake"
+	}
 
-	sort.Strings(names)
 	fmt.Println(names)
-
-	fmt.Println(sort.SearchStrings(names, "life"))
 
 }

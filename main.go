@@ -2,38 +2,40 @@ package main
 
 import (
 	"fmt"
+	"math"
 )
 
+func sayGreeting(n string){
+	fmt.Printf("Good morning %v \n", n)
+}
+
+func sayBye(n string){
+	fmt.Printf("Good bye %v \n", n)
+}
+
+func cycleNames(n []string, f func(string)){
+	for _, v := range n {
+		f(v)
+	}
+}
+
+func circleArea(r float64) float64{
+	return math.Pi * r * r
+}
+
 func main() {
-	age := 45
+	// sayGreeting("mario");
+	// sayGreeting("jake");
+	// sayGreeting("ola");
 
-	fmt.Println(age <= 50)
-	fmt.Println(age >= 50)
-	fmt.Println(age == 45)
-	fmt.Println(age != 50)
+	cycleNames([]string{"nike", "addidas", "puma"}, sayGreeting)
+	cycleNames([]string{"nike", "addidas", "puma"}, sayBye)
 
-	if age < 30 {
-		fmt.Println("Age is less than 30")
-	} else if age < 40 {
-		fmt.Println("Age is less than 40")
-	} else {
-		fmt.Println("Age is not less than 45")
-	}
+	a1 := circleArea(92.22)
+	a2 := circleArea(15)
 
-	names := []string{"jalee", "jill", "biden", "trump"}
+	fmt.Println(a1, a2)
 
-	for index, value := range names {
-		if(index == 1){
-			fmt.Println("Coontinuing at pos", index)
-			continue
-		}
-
-		if(index > 1){
-			fmt.Println("breaking at pos", index)
-			break
-		}
-
-		fmt.Printf("thee value at pos %v is %v \n", index, value)
-	}
+	fmt.Printf("circle 1 is %0.3f and circle 2 is %0.3f", a1, a2 )
 
 }

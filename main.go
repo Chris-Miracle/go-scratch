@@ -3,38 +3,31 @@ package main
 import "fmt"
 
 func main() {
+	age := 35
+	name := "Chris"
 
-	// Declaring strings
-	// var nameOne string = "Hello"
-	// var nameTwo = "Chris"
-	// var nameThree string
+	// Print
+	fmt.Print("Hello, ")
+	fmt.Print("World! \n")
+	fmt.Print("new line \n")
 
-	// fmt.Println(nameOne, nameTwo, nameThree)
+	// Println 
+	fmt.Println("Hello Ninjas!")
+	fmt.Println("Goodbye Ninjas!")
+	fmt.Println("My name is", name, "and my age is", age)
 
-	// nameTwo = "Jake"
-	// nameThree = "Miracle"
+	// Printf Formatted strings %_ = format specifier
+	fmt.Printf("my age is %v and my name is %v \n", age, name)
 
-	// fmt.Println(nameOne, nameTwo, nameThree)
+	fmt.Printf("my age is %q and my name is %q \n", age, name)
 
-	// nameFour := "Yahsi"
+	fmt.Printf("my age is of type %T \n", age)
 
-	// fmt.Println(nameFour)
+	fmt.Printf("you scored %0.2f points! \n", 489.3039)
 
-	//Declaring Ints
+	//Sprintf (save formatted strings)
+	var str = fmt.Sprintf("my age is %v and my name is %v \n", age, name)
+	fmt.Println(str)
 
-	var ageOne int = 40
-	var ageTwo = 30
-	ageThree := 40
 
-	fmt.Println(ageOne, ageTwo, ageThree)
-
-	// intbits
-
-	// var numOne int8 = 25
-	// var numTwo int8 = -128
-	// var numThree uint16 = 256
-
-	var scoreOne float32 = 25.98
-	var scoreTwo float64 = 8893.2938
-	scoreThree := 6.3
 }

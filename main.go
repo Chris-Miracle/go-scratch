@@ -1,23 +1,9 @@
 package main
 
-import (
-	"fmt"
-)
-
-func updateName(name *string) {
-	*name = "Nairobi"
-}
+import "fmt"
 
 func main() {
-	
-	// group A types -> string, int, float, bool, arrays, structs
-	name := "Ikeja"
+	myBill := newBill("Chris's Bill")
 
-
-	m := &name
-
-	fmt.Println(name)
-	updateName(m)
-	fmt.Println(name)
-
+	fmt.Println(myBill)
 }

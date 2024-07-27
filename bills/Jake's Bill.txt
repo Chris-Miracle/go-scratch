@@ -1,0 +1,6 @@
+Bill Breakdown: 
+Chicken Salad:            ...$3.34 
+Apple Juice:              ...$1.22 
+Paper Bag:                ...$0.22 
+tip:                      ...$0.00 
+total:                    ...$4.78

@@ -1,0 +1,6 @@
+Bill Breakdown: 
+Donut:                    ...$1.22 
+Coffe:                    ...$2.99 
+Pepperoni:                ...$0.99 
+tip:                      ...$1.00 
+total:                    ...$6.20
